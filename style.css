@@ -532,3 +532,19 @@ footer .text span a:hover{
     color: #4070f4;
   }
 }
+
+
+.contact-info {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
