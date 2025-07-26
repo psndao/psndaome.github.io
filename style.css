@@ -680,3 +680,10 @@ footer .text span a:hover{
   height: 60px;
   margin-bottom: 15px;
 }
+
+.card:focus,
+.card:active,
+.card:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
