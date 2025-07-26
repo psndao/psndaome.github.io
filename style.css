@@ -687,3 +687,33 @@ footer .text span a:hover{
   outline: none;
   box-shadow: none;
 }
+
+
+.competence-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Effet au survol */
+.competence-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet au clic */
+.competence-card:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Effet focus pour accessibilité sans contour bleu moche */
+.competence-card:focus,
+.competence-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(64, 112, 244, 0.4); /* halo bleu stylé */
+}
