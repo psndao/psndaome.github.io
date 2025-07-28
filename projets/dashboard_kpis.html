@@ -5,60 +5,115 @@
   <title>Dashboard KPIs E-commerce</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+
+  <!-- Polices et icônes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
 
-<section class="projects" style="padding: 80px 0;">
-  <div class="content">
-    <div class="title"><span>Dashboard KPIs E-commerce</span></div>
-
-    <div class="project-box">
-      <h3>🎯 Problématique Business</h3>
-      <p>La startup e-commerce n’a aucune visibilité sur ses performances. Excel ne suffit plus. Objectif : dashboard professionnel avec KPIs en temps réel.</p>
-
-      <h3>📊 Dataset</h3>
-      <ul>
-        <li><strong>Source :</strong> Online Retail Dataset</li>
-        <li><strong>Enrichissement :</strong> Faker pour simuler données récentes</li>
-        <li><strong>Volume :</strong> 541 909 transactions + simulation temps réel</li>
-        <li><strong>Métriques :</strong> CA, panier moyen, conversion, cohortes</li>
-      </ul>
-
-      <h3>🏗️ Architecture Technique</h3>
-      <pre>Raw Data → ETL → Database → BI Tool → Dashboard
- ↓        ↓       ↓         ↓          ↓
-CSV     Python   PostgreSQL  Power BI   DAX</pre>
-
-      <h3>📦 Livrables</h3>
-      <ul>
-        <li>Pipeline Python (pandas) pour nettoyer et préparer les données</li>
-        <li>Base PostgreSQL avec modèle en étoile</li>
-        <li>Dashboard Power BI (KPIs e-commerce)</li>
-        <li>Mesures DAX avancées</li>
-        <li>Version alternative sur Tableau Public</li>
-      </ul>
-
-      <h3>🎯 Critères de réussite</h3>
-      <ul>
-        <li>Chargement du dashboard en moins de 3 secondes</li>
-        <li>Actualisation automatique quotidienne</li>
-        <li>KPIs clairs : CA, conversion, panier moyen, récurrence</li>
-      </ul>
-
-      <h3>🛠️ Stack utilisée</h3>
-      <ul>
-        <li><strong>ETL :</strong> Python, pandas, SQLAlchemy</li>
-        <li><strong>Base de données :</strong> PostgreSQL ou MySQL</li>
-        <li><strong>BI :</strong> Power BI Desktop (gratuit) ou Tableau Public</li>
-        <li><strong>Langages :</strong> SQL, DAX, Python</li>
-      </ul>
-
-      <div style="margin-top: 30px;">
-        <a class="fcc-btn" href="../index.html">← Retour au portfolio</a>
+  <!-- Barre de navigation -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html">Portfoliopape.</a>
       </div>
+      <ul class="menu">
+        <li><a href="../index.html#home">Accueil</a></li>
+        <li><a href="../index.html#about">À propos</a></li>
+        <li><a href="../index.html#experience">Expérience</a></li>
+        <li><a href="../index.html#services">Compétences</a></li>
+        <li><a href="../index.html#projects">Projets</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
     </div>
-  </div>
-</section>
+  </nav>
+
+
+
+
+<!-- fichier : projets/dashboard_kpis.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard KPIs E-commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <section class="projects" style="padding: 80px 0;">
+    <div class="content">
+      <div class="title"><span>Dashboard KPIs E-commerce</span></div>
+
+      <div class="project-box">
+        <h3>Contexte & Problématique Métier</h3>
+        <p>
+          La startup e-commerce était confrontée à un manque de visibilité sur ses indicateurs de performance clés (KPI). Excel ne permettait ni une analyse fiable, ni une actualisation rapide. Objectif : créer un dashboard professionnel, dynamique et automatisé pour piloter l’activité en temps réel.
+        </p>
+
+        <h3>Objectifs Business</h3>
+        <ul>
+          <li>Remplacer les fichiers Excel manuels par un outil automatisé</li>
+          <li>Suivre les KPIs e-commerce en temps réel : CA, taux de conversion, panier moyen</li>
+          <li>Faciliter la prise de décision marketing et stratégique</li>
+        </ul>
+
+        <h3>Jeu de Données & Simulation</h3>
+        <ul>
+          <li><strong>Source principale :</strong> Online Retail Dataset (541 909 transactions)</li>
+          <li><strong>Enrichissement :</strong> génération de clients récents avec <code>Faker</code></li>
+          <li><strong>Fréquence :</strong> Ajout quotidien de commandes simulées</li>
+        </ul>
+
+        <h3>KPIs Métiers Suivis</h3>
+        <ul>
+          <li>Chiffre d'affaires (CA)</li>
+          <li>Taux de conversion</li>
+          <li>Panier moyen</li>
+          <li>Analyse des cohortes clients (fidèles vs nouveaux)</li>
+          <li>Tunnel de conversion</li>
+        </ul>
+
+        
+
+        <h3>Étapes de Réalisation</h3>
+        <ul>
+          <li><strong>Préparation des données :</strong> nettoyage, transformation, enrichissement via <code>pandas</code></li>
+          <li><strong>Modélisation base PostgreSQL :</strong> table de faits + dimensions (produits, clients, temps, pays)</li>
+          <li><strong>Power BI :</strong> connexion directe à la base, création de visuels interactifs, DAX</li>
+        </ul>
+
+        <h3>Visualisations réalisées</h3>
+        <ul>
+          <li>KPI Cards : CA, panier moyen, conversion</li>
+          <li>Graphiques temporels : évolution journalière et mensuelle</li>
+          <li>Heatmap des cohortes clients</li>
+          <li>Funnel de conversion</li>
+        </ul>
+
+        <h3>Résultats & Impact</h3>
+        <ul>
+          <li>Actualisation < 3s grâce à l’optimisation SQL + index PostgreSQL</li>
+          <li>Visualisation partagée via Power BI Service et Tableau Public</li>
+          <li>Gain en réactivité, visibilité et qualité de reporting</li>
+        </ul>
+
+        <h3>Stack utilisée</h3>
+        <ul>
+          <li><strong>ETL :</strong> Python, pandas, SQLAlchemy</li>
+          <li><strong>Base de données :</strong> PostgreSQL</li>
+          <li><strong>Visualisation :</strong> Power BI, DAX, Tableau Public</li>
+        </ul>
+
+        <div class="button" style="margin-top:30px;">
+          <a class="fcc-btn" href="../index.html">← Retour à l'accueil</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
