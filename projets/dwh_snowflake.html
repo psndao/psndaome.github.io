@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet Snowflake Data Warehouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Polices et icônes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html">Portfoliopape.</a>
+      </div>
+      <ul class="menu">
+        <li><a href="../index.html#home">Accueil</a></li>
+        <li><a href="../index.html#about">À propos</a></li>
+        <li><a href="../index.html#experience">Expérience</a></li>
+        <li><a href="../index.html#services">Compétences</a></li>
+        <li><a href="../index.html#projects">Projets</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section Projet -->
+  <section class="projects" style="padding: 80px 0;">
+    <div class="content">
+      <div class="title"><span>❄️ Snowflake Data Warehouse & Analytics</span></div>
+
+      <div class="project-box">
+        <h3>Objectif du Projet</h3>
+        <p>
+          Construire une solution analytique moderne et scalable, de l’ingestion de données brutes jusqu’à la génération d’insights métiers via un entrepôt de données Snowflake (ou SQL Server), en suivant les meilleures pratiques : architecture Medallion, modélisation en étoile, documentation technique.
+        </p>
+
+        <h3>Structure du Répertoire</h3>
+        <ul>
+          <li><strong>datasets/</strong> : Données brutes (ERP, CRM, S3)</li>
+          <li><strong>docs/</strong> : Architecture, ETL, data catalog, nomenclature</li>
+          <li><strong>scripts/</strong> : SQL structurés en couches (bronze, silver, gold)</li>
+          <li><strong>tests/</strong> : Requêtes de validation qualité</li>
+        </ul>
+
+        <h3>Architecture de Données : Medallion</h3>
+        <ul>
+          <li><strong>Bronze :</strong> données brutes (CSV) sans transformation</li>
+          <li><strong>Silver :</strong> nettoyage, standardisation, mapping</li>
+          <li><strong>Gold :</strong> tables de faits/dimensions prêtes pour l’analyse</li>
+        </ul>
+
+        <h3>Analyse & Visualisation</h3>
+        <p>
+          Le modèle final est interrogé via Power BI / Tableau pour générer des dashboards orientés métier :
+        </p>
+        <ul>
+          <li>Analyse des ventes par produit, canal, client</li>
+          <li>Segmentation, fréquence, récence</li>
+          <li>Tendance des performances dans le temps</li>
+        </ul>
+
+        <h3>Points Forts</h3>
+        <ul>
+          <li>Pipeline ETL structuré (bronze → gold)</li>
+          <li>Modélisation étoile claire et documentée</li>
+          <li>Documentation professionnelle (draw.io, markdown)</li>
+          <li>Compatible Snowflake et SQL Server</li>
+        </ul>
+
+        <h3>Stack Technique</h3>
+        <ul>
+          <li><strong>Langages :</strong> SQL (T-SQL ou SnowSQL), YAML</li>
+          <li><strong>Base de données :</strong> Snowflake ❄️ ou SQL Server</li>
+          <li><strong>BI :</strong> Power BI, Tableau</li>
+          <li><strong>Design :</strong> draw.io</li>
+        </ul>
+
+        <div class="button" style="margin: 30px 0;">
+  <a class="fcc-btn" href="https://github.com/psndao/snowflake-datawarehouse-project" target="_blank">
+    <i class="fab fa-github"></i> Voir le projet sur GitHub
+  </a>
+</div>
+
+        <div class="button" style="margin-top: 30px;">
+          <a class="fcc-btn" href="../index.html">← Retour à l'accueil</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
