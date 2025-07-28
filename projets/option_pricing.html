@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Option Pricing Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="navbar">
+    <div class="logo"><a href="../index.html">Portfoliopape.</a></div>
+    <ul class="menu">
+      <li><a href="../index.html#home">Accueil</a></li>
+      <li><a href="../index.html#about">À propos</a></li>
+      <li><a href="../index.html#experience">Expérience</a></li>
+      <li><a href="../index.html#services">Compétences</a></li>
+      <li><a href="../index.html#projects">Projets</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Section projet -->
+<section class="projects" style="padding: 80px 0;">
+  <div class="content">
+    <div class="title"><span>Option Pricing Models</span></div>
+
+    <div class="project-box">
+      <p>
+        Ce projet consiste en la réalisation d’une application web interactive permettant de calculer le prix d’options européennes à l’aide de trois méthodes numériques et analytiques : <strong>le modèle de Black-Scholes</strong>, <strong>la simulation de Monte Carlo</strong> et <strong>le modèle binomial</strong>. L’application est développée en Python avec <strong>Streamlit</strong>, offrant une interface web intuitive sans connaissance préalable en programmation.
+      </p>
+
+      <h3>Objectifs du Projet</h3>
+      <p>
+        Le projet vise à démontrer la capacité à implémenter des modèles financiers en code et à rendre ces calculs accessibles via une interface moderne. Il est issu d’un cours de mathématiques appliquées (Fonctions Spéciales) en Master ingénierie logicielle.
+      </p>
+
+      <h3>Fonctionnalités clés</h3>
+      <ul>
+        <li>Saisie interactive des paramètres : ticker, strike, maturité, volatilité, taux, type d’option</li>
+        <li>Récupération automatique du prix spot via l’API Yahoo Finance</li>
+        <li>Choix entre 3 modèles : Black-Scholes, Binomial, Monte Carlo</li>
+        <li>Interface interactive, réactive, et claire avec Streamlit</li>
+        <li>Système de cache (requests-cache) pour éviter les appels API redondants</li>
+      </ul>
+
+      <h3>Modèles implémentés</h3>
+      <ul>
+        <li><strong>Black-Scholes :</strong> formule analytique pour options européennes. Rapide, mais peu flexible en cas de conditions de marché complexes.</li>
+        <li><strong>Binomial :</strong> approche récursive par arbre. Plus pédagogique, avec précision ajustable selon le nombre d’itérations.</li>
+        <li><strong>Monte Carlo :</strong> simulation de multiples trajectoires via processus brownien. Idéal pour options exotiques.</li>
+      </ul>
+
+      <h3>Architecture technique</h3>
+      <ul>
+        <li>Modules séparés pour chaque modèle → maintenabilité optimale</li>
+        <li>Interface pilotée par Streamlit (Python)</li>
+        <li>Gestion API Yahoo Finance via pandas-datareader</li>
+        <li>Cache avec SQLite local</li>
+      </ul>
+
+      <h3>Perspectives d’évolution</h3>
+      <ul>
+        <li>Ajout du calcul des Greeks (Delta, Vega, Theta...)</li>
+        <li>Support des dividendes</li>
+        <li>Visualisation du volatility smile</li>
+        <li>Déploiement Docker / Cloud</li>
+      </ul>
+
+      <h3>🔗 Liens utiles</h3>
+      <p>
+        👉 <a href="https://github.com/psndao/option_pricing_pro" target="_blank">A venir sur GitHub</a>
+      </p>
+
+      
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
