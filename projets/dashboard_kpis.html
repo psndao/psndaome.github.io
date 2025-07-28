@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard KPIs E-commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<section class="projects" style="padding: 80px 0;">
+  <div class="content">
+    <div class="title"><span>Dashboard KPIs E-commerce</span></div>
+
+    <div class="project-box">
+      <h3>🎯 Problématique Business</h3>
+      <p>La startup e-commerce n’a aucune visibilité sur ses performances. Excel ne suffit plus. Objectif : dashboard professionnel avec KPIs en temps réel.</p>
+
+      <h3>📊 Dataset</h3>
+      <ul>
+        <li><strong>Source :</strong> Online Retail Dataset</li>
+        <li><strong>Enrichissement :</strong> Faker pour simuler données récentes</li>
+        <li><strong>Volume :</strong> 541 909 transactions + simulation temps réel</li>
+        <li><strong>Métriques :</strong> CA, panier moyen, conversion, cohortes</li>
+      </ul>
+
+      <h3>🏗️ Architecture Technique</h3>
+      <pre>Raw Data → ETL → Database → BI Tool → Dashboard
+ ↓        ↓       ↓         ↓          ↓
+CSV     Python   PostgreSQL  Power BI   DAX</pre>
+
+      <h3>📦 Livrables</h3>
+      <ul>
+        <li>Pipeline Python (pandas) pour nettoyer et préparer les données</li>
+        <li>Base PostgreSQL avec modèle en étoile</li>
+        <li>Dashboard Power BI (KPIs e-commerce)</li>
+        <li>Mesures DAX avancées</li>
+        <li>Version alternative sur Tableau Public</li>
+      </ul>
+
+      <h3>🎯 Critères de réussite</h3>
+      <ul>
+        <li>Chargement du dashboard en moins de 3 secondes</li>
+        <li>Actualisation automatique quotidienne</li>
+        <li>KPIs clairs : CA, conversion, panier moyen, récurrence</li>
+      </ul>
+
+      <h3>🛠️ Stack utilisée</h3>
+      <ul>
+        <li><strong>ETL :</strong> Python, pandas, SQLAlchemy</li>
+        <li><strong>Base de données :</strong> PostgreSQL ou MySQL</li>
+        <li><strong>BI :</strong> Power BI Desktop (gratuit) ou Tableau Public</li>
+        <li><strong>Langages :</strong> SQL, DAX, Python</li>
+      </ul>
+
+      <div style="margin-top: 30px;">
+        <a class="fcc-btn" href="../index.html">← Retour au portfolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
