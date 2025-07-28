@@ -533,21 +533,25 @@ footer .text span a:hover{
   }
 }
 
-
-.contact-info {
-  margin: 20px 0;
-  font-size: 1rem;
-  color: #333;
+.contact-intro {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.contact-info a {
-  color: #0077cc;
-  text-decoration: none;
+.contact-intro .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fcb045;
+  margin-bottom: 10px;
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
+.contact-intro p {
+  font-size: 16px;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
 }
+
 
 /* Projects grid modern style */
 .project-grid {
