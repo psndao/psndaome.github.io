@@ -2,22 +2,18 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Projet Snowflake Data Warehouse</title>
+  <title>Snowflake Data Warehouse & Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
-
-  <!-- Polices et icônes -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
 
-  <!-- Barre de navigation -->
+  <!-- Navbar -->
   <nav>
     <div class="navbar">
-      <div class="logo">
-        <a href="../index.html">Portfoliopape.</a>
-      </div>
+      <div class="logo"><a href="../index.html">Portfoliopape.</a></div>
       <ul class="menu">
         <li><a href="../index.html#home">Accueil</a></li>
         <li><a href="../index.html#about">À propos</a></li>
@@ -35,59 +31,57 @@
       <div class="title"><span>❄️ Snowflake Data Warehouse & Analytics</span></div>
 
       <div class="project-box">
-        <h3>Objectif du Projet</h3>
-        <p>
-          Construire une solution analytique moderne et scalable, de l’ingestion de données brutes jusqu’à la génération d’insights métiers via un entrepôt de données Snowflake (ou SQL Server), en suivant les meilleures pratiques : architecture Medallion, modélisation en étoile, documentation technique.
-        </p>
+        <h3>🎯 Objectif du Projet</h3>
+        <p>Concevoir un entrepôt de données moderne et scalable avec Snowflake, selon l’architecture Medallion (Bronze → Silver → Gold), permettant une analyse métier puissante via Power BI ou Tableau.</p>
 
-        <h3>Structure du Répertoire</h3>
+        <h3>📁 Structure du Répertoire</h3>
         <ul>
-          <li><strong>datasets/</strong> : Données brutes (ERP, CRM, S3)</li>
-          <li><strong>docs/</strong> : Architecture, ETL, data catalog, nomenclature</li>
-          <li><strong>scripts/</strong> : SQL structurés en couches (bronze, silver, gold)</li>
-          <li><strong>tests/</strong> : Requêtes de validation qualité</li>
+          <li><strong>datasets/</strong> : Données ERP, CRM, ou S3</li>
+          <li><strong>docs/</strong> : Architecture, catalogues, modèles</li>
+          <li><strong>scripts/</strong> : SQL pour chaque couche ETL</li>
+          <li><strong>tests/</strong> : Scripts de validation qualité</li>
         </ul>
 
-        <h3>Architecture de Données : Medallion</h3>
+        <h3>🧱 Architecture Medallion</h3>
         <ul>
-          <li><strong>Bronze :</strong> données brutes (CSV) sans transformation</li>
-          <li><strong>Silver :</strong> nettoyage, standardisation, mapping</li>
-          <li><strong>Gold :</strong> tables de faits/dimensions prêtes pour l’analyse</li>
+          <li>🥉 <strong>Bronze :</strong> Ingestion brute</li>
+          <li>🥈 <strong>Silver :</strong> Nettoyage & transformation</li>
+          <li>🥇 <strong>Gold :</strong> Modèle en étoile prêt pour le BI</li>
         </ul>
 
-        <h3>Analyse & Visualisation</h3>
-        <p>
-          Le modèle final est interrogé via Power BI / Tableau pour générer des dashboards orientés métier :
-        </p>
+        <h3>📊 Analytique & Visualisation</h3>
+        <p>Exploitation via Power BI / Tableau pour explorer :</p>
         <ul>
-          <li>Analyse des ventes par produit, canal, client</li>
-          <li>Segmentation, fréquence, récence</li>
-          <li>Tendance des performances dans le temps</li>
+          <li>Performance produit, région, canal</li>
+          <li>Analyse RFM et segmentation</li>
+          <li>Tendances temporelles des ventes</li>
         </ul>
 
-        <h3>Points Forts</h3>
+        <h3>✅ Compétences mises en œuvre</h3>
         <ul>
-          <li>Pipeline ETL structuré (bronze → gold)</li>
-          <li>Modélisation étoile claire et documentée</li>
-          <li>Documentation professionnelle (draw.io, markdown)</li>
-          <li>Compatible Snowflake et SQL Server</li>
+          <li>📦 Intégration multi-sources (ERP, CRM, S3)</li>
+          <li>🏗️ Modélisation étoile & Medallion</li>
+          <li>🔄 Pipeline ETL structuré</li>
+          <li>🧪 Tests d’intégrité et qualité</li>
+          <li>📊 KPI & requêtes analytiques</li>
+          <li>📝 Documentation complète</li>
         </ul>
 
-        <h3>Stack Technique</h3>
+        <h3>🛠️ Stack Technique</h3>
         <ul>
-          <li><strong>Langages :</strong> SQL (T-SQL ou SnowSQL), YAML</li>
-          <li><strong>Base de données :</strong> Snowflake ❄️ ou SQL Server</li>
-          <li><strong>BI :</strong> Power BI, Tableau</li>
-          <li><strong>Design :</strong> draw.io</li>
+          <li>Langages : SQL (SnowSQL / T-SQL), YAML</li>
+          <li>Base : Snowflake ou SQL Server</li>
+          <li>BI : Power BI, Tableau</li>
+          <li>Design : draw.io</li>
         </ul>
 
         <div class="button" style="margin: 30px 0;">
-  <a class="fcc-btn" href="https://github.com/psndao/snowflake-datawarehouse-project" target="_blank">
-    <i class="fab fa-github"></i> Voir le projet sur GitHub
-  </a>
-</div>
+          <a class="fcc-btn" href="https://github.com/psndao/snowflake-datawarehouse-project" target="_blank">
+            <i class="fab fa-github"></i> Voir le projet sur GitHub
+          </a>
+        </div>
 
-        <div class="button" style="margin-top: 30px;">
+        <div class="button">
           <a class="fcc-btn" href="../index.html">← Retour à l'accueil</a>
         </div>
       </div>
