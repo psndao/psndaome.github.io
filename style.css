@@ -966,3 +966,17 @@ footer .text span a:hover{
 .fcc-btn:hover {
   background-color: #2854d7;
 }
+
+.project-box-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-box-link .project-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box-link .project-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
