@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pipeline Données Crypto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="../index.html">Portfoliopape.</a></div>
+      <ul class="menu">
+        <li><a href="../index.html#home">Accueil</a></li>
+        <li><a href="../index.html#about">À propos</a></li>
+        <li><a href="../index.html#experience">Expérience</a></li>
+        <li><a href="../index.html#services">Compétences</a></li>
+        <li><a href="../index.html#projects">Projets</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section principale -->
+  <section class="projects" style="padding: 80px 0;">
+    <div class="content">
+      <div class="title"><span>Pipeline Données Crypto – Données Temps Réel</span></div>
+
+      <div class="project-box">
+
+        <h3>Contexte & Objectif Business</h3>
+        <p>
+          Dans un marché aussi volatil que celui des cryptomonnaies, les analystes ont besoin d’un accès rapide et structuré aux données pour prendre des décisions, faire du backtesting ou concevoir des modèles. Ce projet vise à construire un pipeline complet de collecte, traitement, stockage et exposition des données crypto en temps réel.
+        </p>
+
+        <h3>Problématique</h3>
+        <p>
+          Les données sont souvent dispersées, limitées par les API, et non historisées. L’objectif ici est de rendre accessibles des données granulaires (1 minute) pour plus de 50 cryptos via une API centralisée, fiable et scalable.
+        </p>
+
+        <h3>Sources de Données</h3>
+        <ul>
+          <li><strong>Binance API</strong> : prix OHLC, volumes</li>
+          <li><strong>CoinGecko API</strong> : market cap, volume global, indicateurs sociaux</li>
+        </ul>
+
+        
+
+        <h3>Fonctionnalités Clés</h3>
+        <ul>
+          <li>Collecte automatique toutes les 60s (Airflow + Python)</li>
+          <li>Stockage temps réel (PostgreSQL) + historique (Parquet)</li>
+          <li>API REST (FastAPI) pour consommation des données</li>
+          <li>Monitoring et retry des erreurs via Airflow</li>
+        </ul>
+
+        <h3>Stack Technique</h3>
+        <ul>
+          <li><strong>Collecte</strong> : Python, Airflow, requests</li>
+          <li><strong>Stockage</strong> : PostgreSQL, Parquet</li>
+          <li><strong>Traitement</strong> : pandas, PySpark</li>
+          <li><strong>API</strong> : FastAPI + Swagger UI</li>
+          <li><strong>Conteneurisation</strong> : Docker + Docker Compose</li>
+        </ul>
+
+        <h3>Résultats</h3>
+        <ul>
+          <li>Données collectées toutes les 60 secondes ✅</li>
+          <li>API responsive < 150ms ✅</li>
+          <li>Backtest & dashboard prêts à l’emploi ✅</li>
+          <li>Résilience face aux pannes API ✅</li>
+        </ul>
+
+        <h3>Livrables</h3>
+        <ul>
+          <li>DAGs Airflow fonctionnels</li>
+          <li>Schéma PostgreSQL documenté</li>
+          <li>Export Parquet structuré</li>
+          <li>API REST documentée</li>
+          <li>Dockerfile & docker-compose.yml</li>
+        </ul>
+
+        <h3>Valeur Métier Apportée</h3>
+        <p>
+          Ce pipeline permet à une plateforme ou un analyste de :
+          <ul>
+            <li>Suivre les marchés crypto en temps réel</li>
+            <li>Construire des modèles de trading automatisés</li>
+            <li>Effectuer du backtesting rapide et précis</li>
+            <li>Fournir des données à d’autres services ou dashboards</li>
+          </ul>
+        </p>
+
+        <h3>Prochaines Évolutions</h3>
+        <ul>
+          <li>Intégration d’un dashboard en temps réel (Streamlit, Grafana)</li>
+          <li>Ajout de modules ML : prédiction, clustering, scoring</li>
+          <li>Déploiement sur cloud (AWS / Azure) pour mise à l’échelle</li>
+          <li>Alertes Telegram / Discord</li>
+        </ul>
+
+        <div class="button" style="margin-top:30px;">
+          <a class="fcc-btn" href="../index.html">← Retour à l'accueil</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
