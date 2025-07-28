@@ -931,3 +931,38 @@ footer .text span a:hover{
 }
 
 
+.content {
+  width: 80%;
+  margin: 60px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.content p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.fcc-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #4070f4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.fcc-btn:hover {
+  background-color: #2854d7;
+}
