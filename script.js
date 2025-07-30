@@ -72,3 +72,19 @@ window.addEventListener("load", () => {
     document.body.classList.add("loaded");
   }, 1000); // délai de 1s (modifiable)
 });
+
+
+const fadeElements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // désactive l’observation une fois affiché
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+fadeElements.forEach(el => observer.observe(el));
