@@ -59,3 +59,16 @@ toggle?.addEventListener("change", () => {
   document.body.classList.toggle("dark-mode");
   localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
 });
+
+
+// Loader de démarrage
+document.body.classList.add("loading");
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader-wrapper");
+  setTimeout(() => {
+    loader.style.display = "none";
+    document.body.classList.remove("loading");
+    document.body.classList.add("loaded");
+  }, 1000); // délai de 1s (modifiable)
+});
