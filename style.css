@@ -1082,3 +1082,35 @@ footer .text span a:hover{
 .fcc-btn:hover {
   background-color: #005983;
 }
+
+/* Par défaut : clair */
+body {
+  background-color: #ffffff;
+  color: #222222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+}
+
+.dark-mode a {
+  color: #9bd6ff;
+}
+
+/* Toggle visuel */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+  font-size: 20px;
+}
