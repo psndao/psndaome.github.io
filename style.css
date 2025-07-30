@@ -1029,3 +1029,22 @@ footer .text span a:hover{
   text-decoration: underline;
 }
 
+.fcc-btn {
+  background-color: #2f80ed;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 10px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.fcc-btn:hover {
+  background-color: #1c5fbf;
+}
+
+.cv-actions {
+  margin-top: 20px;
+}
