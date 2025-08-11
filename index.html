@@ -1,305 +1,293 @@
 <!DOCTYPE html>
-<!-- Designined by pape -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Pape Ndao | Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pape Ndao | Data Analyst & Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Pape Ndao, Data Analyst & Data Scientist (Finance & Assurance). Projets, compétences, expériences, et contact.">
+  <link rel="canonical" href="https://ton-domaine.fr/">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pape Ndao | Data Analyst & Data Scientist">
+  <meta property="og:description" content="Finance & Assurance — Projets, compétences, expériences, contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ton-domaine.fr/">
+  <meta property="og:image" content="https://ton-domaine.fr/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pape Ndao | Data Analyst & Data Scientist">
+  <meta name="twitter:description" content="Finance & Assurance — Projets, compétences, expériences, contact.">
+  <meta name="twitter:image" content="https://ton-domaine.fr/images/og-image.jpg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome (optionnel si vous gardez les icônes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xZ1eY1q9rGq6G5a0lK3Y1hZr2nZb3vYc1F1ZbE0r0Xh7n9w6E0t9V0mYQnDgW8Q9t7N1Y6R0a2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
 <body>
-  <!-- Move to up button -->
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Bouton remonter en haut -->
+  <div class="scroll-button" hidden>
+    <a href="#home" aria-label="Revenir en haut"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
   </div>
-  <!-- navgaition menu -->
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#"></a></div>
-      <ul class="menu">
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#about">A propos</a></li>
-          <li><a href="#experience">Expérience</a></li>
-          <li><a href="#services">Compétences Techs</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contacts</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="logo" href="#home" aria-label="Retour à l’accueil">Pape Ndao</a>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <ul id="main-menu" class="menu">
+        <li><a href="#home" aria-current="page">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#services">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="menu-social" aria-label="Réseaux sociaux">
+          <a href="https://www.linkedin.com/in/papesemoundao" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" width="24" height="24" loading="lazy">
+          </a>
+          <a href="https://github.com/psndao" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+            <img src="https://cdn.cdnlogo.com/logos/g/55/github.svg" alt="" width="24" height="24" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <button class="cancel-btn" aria-label="Fermer le menu">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </li>
       </ul>
+    </nav>
+  </header>
 
-<p class="social-icons">
-  <a href="https://www.linkedin.com/in/papesemoundao" target="_blank" rel="noreferrer">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" height="40"/>
-  </a>
-  <a href="https://github.com/psndao" target="_blank" rel="noreferrer">
-    <img src="https://cdn.cdnlogo.com/logos/g/55/github.svg" alt="GitHub" width="40" height="40"/>
-  </a>
-</p>
-
-
-
-    </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
-
-
-<!-- Home Section Start -->
-<!-- Home Section Start -->
-<section class="home" id="home">
-  <div class="home-content">
-    <div class="text">
-      <div class="text-one">Bonjour,</div>
-      <div class="text-two">Je suis Pape NDAO</strong></div>
-      <div class="text-three">
-        <span class="role">Data Scientist</span> &nbsp;|&nbsp;
-        <span class="role">Finance & Assurance</span>
-        
-
-      </div>
-      <div class="text-four">Basé en Île-de-France – Mobile sur toute la France</div>
-    </div>
-    <div class="button">
-      <a class="fcc-btn" href="https://www.linkedin.com/in/papesemoundao" target="_blank" rel="noopener noreferrer">
-        Me contacter
-      </a>
-    </div>
-  </div>
-</section>
-
-
-</div>
-
-<!-- About Section Start -->
-<section class="about" id="about">
-  <div class="content">
-    <div class="title"><span>À propos de moi</span></div>
-    <div class="about-details">
-      <div class="left">
-        <img src="images/about.png" alt="Photo de profil">
-      </div>
-
-      <div class="right">
-        <div class="topic">Data Analyst | Chargé d’études statistiques</div>
-        <p>
-          Formé en économie quantitative et statistiques appliquées, j’ai progressivement élargi mes compétences vers la data science, le cloud computing et les environnements Big Data.<br><br>
-          Ce cheminement est le fruit d’une conviction forte : les données ne sont pas seulement des chiffres, elles sont un levier stratégique puissant lorsqu’elles sont bien exploitées, modélisées, et intégrées dans les systèmes décisionnels modernes.<br><br>
-          Aujourd’hui, avec quelques années d’expérience dans l’analyse, la modélisation et la valorisation de données économiques et assurantielles, j’interviens sur tout le cycle de vie de la donnée, de l’exploration statistique à la mise en production de solutions ML ou BI.
-        </p>
-
-        <div class="cv-actions">
-          <a href="mailto:papesemoundao2016@gmail.com?subject=Demande de CV&body=Bonjour Pape, je souhaiterais consulter votre CV. Merci Cordialement" class="fcc-btn">Consulter mon CV</a>
+  <main id="main">
+    <!-- Section Hero / Home -->
+    <section class="home" id="home" aria-labelledby="intro-title">
+      <div class="home-content">
+        <div class="text">
+          <h1 class="text-one" id="intro-title">Bonjour,</h1>
+          <p class="text-two">Je suis <strong>Pape NDAO</strong></p>
+          <p class="text-three">
+            <span class="role">Data Scientist</span>
+            &nbsp;|&nbsp;
+            <span class="role">Finance & Assurance</span>
+          </p>
+          <p class="text-four">Basé en Île-de-France — Mobile sur toute la France</p>
+        </div>
+        <div class="button">
+          <a class="btn primary" href="https://www.linkedin.com/in/papesemoundao" target="_blank" rel="noopener noreferrer">Me contacter</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-
-<section class="experience" id="experience">
-  <div class="content">
-    <div class="title"><span>Expérience professionnelle</span></div>
-
-    <div class="experience-item">
-      <img src="images/axa.png" alt="AXA Logo" class="logo-exp">
-      <div class="experience-details">
-        <h3><strong>Data Analyst – AXA France IARD</strong></h3>
-        <p class="duration">2024 – présent</p>
-        <p>Collecte, traitement et visualisation des données de souscription. Stack : Azure, Databricks, PySpark, Power BI.</p>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="experience-item">
-      <img src="images/malakoff.png" alt="Malakoff Logo" class="logo-exp">
-      <div class="experience-details">
-        <h3><strong>Chargé d’études statistiques – Malakoff Humanis</strong></h3>
-        <p class="duration">2023 – 2024</p>
-        <p>Reporting SAS, analyse du risque santé, alertes qualité, migration Power BI, automatisation.</p>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="experience-item">
-  <img src="images/cnrs.png" alt="CNRS Logo" class="logo-exp">
-  <div class="experience-details">
-    <h3><strong>Assistant de recherche – Université Paris Nanterre / CNRS</strong></h3>
-    <p class="duration">2023</p>
-    <p>
-      Analyse statistique sur les inégalités pénales, visualisation avec R Shiny, rédaction de rapports.
-      <br>
-      <a href="https://observatoire-disparites-justice-penale.fr/lequipe/" target="_blank" class="external-link">
-        Voir mes contributions
-      </a>
-    </p>
-  </div>
-</div>
-
-  </div>
-</section>
-
-
-
-<section id="services">
-  <div class="content">
-    
-     <div class="title"><span>Mes compétences techniques</span></div>
-
-    <div class="competence-grid">
-      <div class="competence-card">
-        <img src="images/cloud.png" alt="Cloud & Big Data">
-        <h3>Cloud & Big Data</h3>
-        <p>Azure, AWS, Databricks, Spark, Hadoop</p>
-      </div>
-
-      <div class="competence-card">
-        <img src="images/bi_tools.png" alt="Visualisation & BI">
-        <h3>Visualisation & BI</h3>
-        <p>Power BI, Streamlit, Power Apps, Qlik Sense</p>
-      </div>
-
-      <div class="competence-card">
-        <img src="images/tools_languages.png" alt="Outils & Langages">
-        <h3>Outils & langages</h3>
-        <p>Python, SQL, SAS, Git, Excel/VBA</p>
-      </div>
-
-      <div class="competence-card">
-        <img src="images/machine_learning.png" alt="Data Science & ML">
-        <h3>Machine Learning</h3>
-        <p>Scikit-learn, XGBoost, régression, classification, clustering, NLP</p>
-      </div>
-
-      <div class="competence-card">
-        <img src="images/web_api.png" alt="Web & API">
-        <h3>Web & API</h3>
-        <p>Requêtes API REST, formats JSON / XML</p>
-      </div>
-
-      <div class="competence-card">
-        <img src="images/data_warehouse.png" alt="Data Warehouse">
-        <h3>Data Warehouse</h3>
-        <p>Modélisation en étoile, PostgreSQL, MySQL, SQLAlchemy</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Projects Section Start -->
-<section class="projects" id="projects">
-  <div class="content">
-    <div class="title"><span>Mes projets</span></div>
-
-    <div class="project-grid">
-
-      <!-- Projet Crypto -->
-      <a href="projets/pipeline_crypto.html" class="project-card-link">
-        <div class="project-card">
-          <h3>Pipeline Données Crypto en Temps Réel</h3>
-          <p>Collecte, traitement et exposition via API de données crypto en temps réel avec Airflow, FastAPI, PostgreSQL & Spark.</p>
+    <!-- À propos -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="content">
+        <h2 class="title" id="about-title"><span>À propos de moi</span></h2>
+        <div class="about-details">
+          <div class="left">
+            <img src="images/about.png" alt="Photo de profil" loading="lazy" width="360" height="360">
+          </div>
+          <div class="right">
+            <p class="topic">Data Analyst | Chargé d’études statistiques</p>
+            <p>
+              Formé en économie quantitative et statistiques appliquées, j’ai progressivement élargi mes compétences vers la data science, le cloud computing et les environnements Big Data.<br><br>
+              Ce cheminement est le fruit d’une conviction forte : les données ne sont pas seulement des chiffres, elles sont un levier stratégique puissant lorsqu’elles sont bien exploitées, modélisées, et intégrées dans les systèmes décisionnels modernes.<br><br>
+              Aujourd’hui, avec quelques années d’expérience dans l’analyse, la modélisation et la valorisation de données économiques et assurantielles, j’interviens sur tout le cycle de vie de la donnée, de l’exploration statistique à la mise en production de solutions ML ou BI.
+            </p>
+            <div class="cv-actions">
+              <a class="btn" href="/cv/Pape_Ndao_CV.pdf" target="_blank" rel="noopener">Consulter mon CV</a>
+              <a class="btn outline" href="mailto:papesemoundao2016@gmail.com?subject=Contact%20depuis%20le%20portfolio">Me contacter par email</a>
+            </div>
+          </div>
         </div>
-      </a>
-
-      <!-- Projet 1 : GitHub -->
-      <a href="https://github.com/psndao/Fast_api_project" target="_blank" class="project-card-link">
-        <div class="project-card">
-          <h3>Modélisation SQLAlchemy à l'API et à la Data App</h3>
-          <p>Création d’une base PostgreSQL, API FastAPI, SDK Python, dashboard Streamlit connecté à l’API.</p>
-        </div>
-      </a>
-
-      <!-- Projet 2 : GitHub -->
-      <a href="https://github.com/psndao/Azure-Databricks_" target="_blank" class="project-card-link">
-        <div class="project-card">
-          <h3>Déploiement Azure Databricks & Connexion à ADLS Gen2</h3>
-          <p>Création d’un workspace Databricks via ARM, OAuth2, montage sécurisé ADLS Gen2, traitement PySpark.</p>
-        </div>
-      </a>
-
-      <!-- Projet Snowflake (unique) -->
-      <a href="projets/dwh_snowflake.html" class="project-card-link">
-        <div class="project-card">
-          <h3>Snowflake Data Warehouse & BI</h3>
-          <p>Architecture Medallion, modélisation en étoile, dashboards Power BI/Tableau.</p>
-        </div>
-      </a>
-
-     
-      <!-- Projet Option Pricing -->
-<a href="projets/option_pricing.html" class="project-card-link">
-  <div class="project-card">
-    <h3>Option Pricing Models</h3>
-    <p>Application Streamlit pour valoriser les options européennes via Black-Scholes, Monte Carlo et Binomial.</p>
-  </div>
-</a>
-
-      <!-- Projet Dashboard KPIs -->
-      <a href="projets/dashboard_kpis.html" class="project-card-link">
-        <div class="project-card">
-          <h3>Dashboard KPIs E-commerce</h3>
-          <p>Visualisation des indicateurs de performance : chiffre d'affaires, conversion, panier moyen, automatisation Power BI.</p>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Me contacter</span></div>
-
-    <div class="contact-intro">
-      <h3 class="topic">Un projet en tête ?</h3>
-      <p>Pourquoi attendre ? Discutons ensemble. Je suis disponible pour échanger autour de vos besoins en data.</p>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <h4>Adresse</h4>
-        <p>6 rue Louise de Vilmorin<br>93330 Neuilly sur Marne</p>
       </div>
+    </section>
 
-      <div class="contact-card">
-        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-        <h4>Téléphone</h4>
-        <p><a href="tel:+33758746835">+33 7 58 74 68 35</a></p>
+    <!-- Expérience -->
+    <section class="experience" id="experience" aria-labelledby="xp-title">
+      <div class="content">
+        <h2 class="title" id="xp-title"><span>Expérience professionnelle</span></h2>
+
+        <article class="experience-item">
+          <img src="images/axa.png" alt="Logo AXA" class="logo-exp" loading="lazy" width="64" height="64">
+          <div class="experience-details">
+            <h3>Data Analyst — AXA France IARD</h3>
+            <p class="duration"><time datetime="2024">2024</time> — présent</p>
+            <p>Collecte, traitement et visualisation des données de souscription. Stack : Azure, Databricks, PySpark, Power BI.</p>
+          </div>
+        </article>
+
+        <hr>
+
+        <article class="experience-item">
+          <img src="images/malakoff.png" alt="Logo Malakoff Humanis" class="logo-exp" loading="lazy" width="64" height="64">
+          <div class="experience-details">
+            <h3>Chargé d’études statistiques — Malakoff Humanis</h3>
+            <p class="duration"><time datetime="2023">2023</time> — <time datetime="2024">2024</time></p>
+            <p>Reporting SAS, analyse du risque santé, alertes qualité, migration Power BI, automatisation.</p>
+          </div>
+        </article>
+
+        <hr>
+
+        <article class="experience-item">
+          <img src="images/cnrs.png" alt="Logo CNRS" class="logo-exp" loading="lazy" width="64" height="64">
+          <div class="experience-details">
+            <h3>Assistant de recherche — Université Paris Nanterre / CNRS</h3>
+            <p class="duration"><time datetime="2023">2023</time></p>
+            <p>
+              Analyse statistique sur les inégalités pénales, visualisation avec R Shiny, rédaction de rapports.
+              <br>
+              <a href="https://observatoire-disparites-justice-penale.fr/lequipe/" target="_blank" rel="noopener" class="external-link" aria-label="Voir mes contributions (nouvel onglet)">Voir mes contributions</a>
+            </p>
+          </div>
+        </article>
       </div>
+    </section>
 
-      <div class="contact-card">
-        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-        <h4>Email</h4>
-        <p><a href="mailto:papesemoundao2016@gmail.com">papesemoundao2016@gmail.com</a></p>
+    <!-- Compétences -->
+    <section class="services" id="services" aria-labelledby="skills-title">
+      <div class="content">
+        <h2 class="title" id="skills-title"><span>Mes compétences techniques</span></h2>
+
+        <ul class="competence-grid">
+          <li class="competence-card">
+            <img src="images/cloud.png" alt="Cloud & Big Data" loading="lazy" width="64" height="64">
+            <h3>Cloud & Big Data</h3>
+            <p>Azure, AWS, Databricks, Spark, Hadoop</p>
+          </li>
+
+          <li class="competence-card">
+            <img src="images/bi_tools.png" alt="Visualisation & BI" loading="lazy" width="64" height="64">
+            <h3>Visualisation & BI</h3>
+            <p>Power BI, Streamlit, Power Apps, Qlik Sense</p>
+          </li>
+
+          <li class="competence-card">
+            <img src="images/tools_languages.png" alt="Outils & Langages" loading="lazy" width="64" height="64">
+            <h3>Outils & langages</h3>
+            <p>Python, SQL, SAS, Git, Excel/VBA</p>
+          </li>
+
+          <li class="competence-card">
+            <img src="images/machine_learning.png" alt="Machine Learning" loading="lazy" width="64" height="64">
+            <h3>Machine Learning</h3>
+            <p>Scikit-learn, XGBoost, régression, classification, clustering, NLP</p>
+          </li>
+
+          <li class="competence-card">
+            <img src="images/web_api.png" alt="Web & API" loading="lazy" width="64" height="64">
+            <h3>Web & API</h3>
+            <p>Requêtes API REST, formats JSON / XML</p>
+          </li>
+
+          <li class="competence-card">
+            <img src="images/data_warehouse.png" alt="Data Warehouse" loading="lazy" width="64" height="64">
+            <h3>Data Warehouse</h3>
+            <p>Modélisation en étoile, PostgreSQL, MySQL, SQLAlchemy</p>
+          </li>
+        </ul>
       </div>
+    </section>
 
-      
-    </div>
-  </div>
-</section>
+    <!-- Projets -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="content">
+        <h2 class="title" id="projects-title"><span>Mes projets</span></h2>
 
+        <div class="project-grid">
+          <a href="projets/pipeline_crypto.html" class="project-card-link" aria-label="Pipeline Données Crypto en Temps Réel">
+            <div class="project-card">
+              <h3>Pipeline Données Crypto en Temps Réel</h3>
+              <p>Collecte, traitement et exposition via API de données crypto en temps réel avec Airflow, FastAPI, PostgreSQL & Spark.</p>
+            </div>
+          </a>
 
+          <a href="https://github.com/psndao/Fast_api_project" target="_blank" rel="noopener" class="project-card-link" aria-label="Modélisation SQLAlchemy à l'API et à la Data App (GitHub)">
+            <div class="project-card">
+              <h3>Modélisation SQLAlchemy à l'API et à la Data App</h3>
+              <p>Création d’une base PostgreSQL, API FastAPI, SDK Python, dashboard Streamlit connecté à l’API.</p>
+            </div>
+          </a>
 
-<!-- Footer Section Start -->
-<footer>
-  <div class="text">
-    <span>Crée par <a href="#">Pape Semou ndao</a> | &#169; 2025 Tous droits réservés.</span>
-  </div>
-</footer>
+          <a href="https://github.com/psndao/Azure-Databricks_" target="_blank" rel="noopener" class="project-card-link" aria-label="Déploiement Azure Databricks & Connexion à ADLS Gen2 (GitHub)">
+            <div class="project-card">
+              <h3>Déploiement Azure Databricks & Connexion à ADLS Gen2</h3>
+              <p>Création d’un workspace Databricks via ARM, OAuth2, montage sécurisé ADLS Gen2, traitement PySpark.</p>
+            </div>
+          </a>
 
-  <script src="script.js"></script>
+          <a href="projets/dwh_snowflake.html" class="project-card-link" aria-label="Snowflake Data Warehouse & BI">
+            <div class="project-card">
+              <h3>Snowflake Data Warehouse & BI</h3>
+              <p>Architecture Medallion, modélisation en étoile, dashboards Power BI/Tableau.</p>
+            </div>
+          </a>
+
+          <a href="projets/option_pricing.html" class="project-card-link" aria-label="Option Pricing Models">
+            <div class="project-card">
+              <h3>Option Pricing Models</h3>
+              <p>Application Streamlit pour valoriser les options européennes via Black-Scholes, Monte Carlo et Binomial.</p>
+            </div>
+          </a>
+
+          <a href="projets/dashboard_kpis.html" class="project-card-link" aria-label="Dashboard KPIs E-commerce">
+            <div class="project-card">
+              <h3>Dashboard KPIs E-commerce</h3>
+              <p>Visualisation des indicateurs de performance : chiffre d'affaires, conversion, panier moyen, automatisation Power BI.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="content">
+        <h2 class="title" id="contact-title"><span>Me contacter</span></h2>
+
+        <div class="contact-intro">
+          <h3 class="topic">Un projet en tête ?</h3>
+          <p>Pourquoi attendre ? Discutons ensemble. Je suis disponible pour échanger autour de vos besoins en data.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>Adresse</h4>
+            <address>
+              6 rue Louise de Vilmorin<br>
+              93330 Neuilly-sur-Marne
+            </address>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-phone-alt"></i></div>
+            <h4>Téléphone</h4>
+            <p><a href="tel:+33758746835">+33 7 58 74 68 35</a></p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+            <h4>Email</h4>
+            <p><a href="mailto:papesemoundao2016@gmail.com">papesemoundao2016@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Créé par <a href="#home">Pape Semou Ndao</a> — © <time datetime="2025">2025</time> Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
-
