@@ -108,64 +108,75 @@ nav.sticky .menu-btn{
 }
 
 /* home section styling */
-.home{
+.home {
   height: 100vh;
   width: 100%;
-  /* background: url("https://github.com/Kapil987/contactKapil.github.io/blob/main/images/background.png") no-repeat; */
-  background: url("images/background.png") no-repeat;
+  background: url("images/background.png") no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  display: flex;              /* Active Flexbox */
+  align-items: center;        /* Centrage vertical */
+  justify-content: center;    /* Centrage horizontal */
+  text-align: center;         /* Texte centré */
 }
-.home .home-content{
+
+.home .home-content {
   width: 90%;
-  height: 100%;
-  margin: auto;
+  max-width: 900px;           /* Évite que ça s'étale trop sur grands écrans */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;        /* Centre le contenu dans la colonne */
 }
-.home .text-one{
+
+/* Texte */
+.home .text-one {
   font-size: 25px;
   color: #0E2431;
 }
-.home .text-two{
+
+.home .text-two {
   color: #0E2431;
   font-size: 75px;
   font-weight: 600;
-  margin-left: -3px;
 }
-.home .text-three{
+
+.home .text-three {
   font-size: 40px;
   margin: 5px 0;
   color: #4070f4;
 }
-.home .text-four{
+
+.home .text-four {
   font-size: 23px;
   margin: 5px 0;
   color: #0E2431;
 }
-.home .button{
-  margin: 14px 0;
+
+/* Bouton */
+.home .button {
+  margin-top: 20px;
 }
-.home .button button{
-  outline: none;
-  padding: 8px 16px;
+
+.home .fcc-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 20px;
   border-radius: 6px;
-  font-size: 25px;
-  font-weight: 400;
   background: #4070f4;
   color: #fff;
-  cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
+  text-decoration: none;
 }
-.home .button button:hover{
+
+.home .fcc-btn:hover {
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
 }
+
+
+
 /* button margin */
 .fcc-btn {
   outline: none;
